@@ -1,1 +1,8 @@
-# Week1_Day3_Project
+# Week1 Project
+
+
+# Team:
+Suha
+Rayan
+Matt
+Tawfik
