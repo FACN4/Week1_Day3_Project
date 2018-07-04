@@ -126,6 +126,11 @@ h2 {
    height: 160px ;
      width : 160px ;
  }
+
+#gform { display:none;}
+#no-js-message { display:block;
+text-align:center;}
+
 @media only screen and (min-width: 601px) {
   .team-container {
     display: grid;
