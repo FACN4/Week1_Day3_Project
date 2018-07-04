@@ -148,7 +148,7 @@ text-align:center;}
 @media only screen and (min-width: 601px) {
   .team-container {
     display: grid;
-    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-columns: 48% 48%;
   }
   #logo {
     margin-top: 0;
@@ -190,5 +190,13 @@ text-align:center;}
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+  }
+}
+
+
+@media only screen and (min-width: 1001px) {
+  .team-container {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
   }
 }
