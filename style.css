@@ -74,7 +74,8 @@ h2 {
 }
 
 #logo {
-  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
   color: #555;
   text-decoration: none;
   text-transform: uppercase;
@@ -82,7 +83,7 @@ h2 {
   font-weight: 800;
   letter-spacing: -3px;
   line-height: 1;
-  text-shadow: #EDEDED 3px 2px 0;
+  text-shadow: #ededed 3px 2px 0;
   position: relative;
 
 }
@@ -104,4 +105,12 @@ h2 {
 }
 .footer p{
 
+}
+
+@media only screen and (min-width: 600px) {
+  .team-container {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    text-align: center;
+  }
 }
