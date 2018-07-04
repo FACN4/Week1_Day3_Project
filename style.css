@@ -88,12 +88,14 @@ h2 {
 
 }
 #logo:after {
+  text-align: center;
   content:"The A Team";
   position: absolute;
 
   top: 7px;
 }
 #logo:after {
+  text-align: center;
   background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;
   background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
   background-size: 4px 4px;
