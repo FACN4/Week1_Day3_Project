@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,12 +8,13 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #000;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+
 }
 
 input[type="submit"] {
@@ -56,6 +58,14 @@ h2 {
   padding: 14px 16px;
   text-decoration: none;
 }
+.navbar span {
+  margin-right: 25%;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
 /* Change background on mouse-over */
 .navbar a:hover {
@@ -75,6 +85,26 @@ h2 {
   line-height: 1;
   text-shadow: #ededed 3px 2px 0;
   position: relative;
+
+}
+#logo:after {
+  content:"The A Team";
+  position: absolute;
+
+  top: 7px;
+}
+#logo:after {
+  background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;
+  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+  background-size: 4px 4px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -5;
+  display: block;
+  text-shadow: none;
+}
+.footer p{
+
 }
 
 @media only screen and (min-width: 600px) {
