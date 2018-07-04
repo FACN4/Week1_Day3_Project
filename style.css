@@ -76,14 +76,11 @@ h2 {
   text-shadow: #ededed 3px 2px 0;
   position: relative;
 }
-@media screen and (max-width: 600px) {
-  #team article {
-    float: left;
-  }
-}
 
-.team-container {
-  display: grid;
-  grid-template-columns: 24% 24% 24% 24%;
-  text-align: center;
+@media only screen and (min-width: 600px) {
+  .team-container {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    text-align: center;
+  }
 }
