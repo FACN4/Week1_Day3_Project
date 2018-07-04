@@ -31,5 +31,5 @@ We met the following user stories with our website:
 - [x] Contain a contact form containing at least Name, Email and Message information
 - [x] Clicking links should go directly to the correct section
 - [x] Visually impaired - site should be easy to read and understand
-- [x] The site shold be navigatable with a screen reader
+- [x] A screen reader should be able to navigate the website
 - [x] The site should work even when user's have JavaScript disabled in the browser
