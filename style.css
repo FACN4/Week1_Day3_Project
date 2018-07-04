@@ -1,4 +1,6 @@
 
+/* Body and Structure */
+
 body {
   background-color: #FFF;
   font-size: 1.2em;
@@ -8,6 +10,25 @@ body {
   text-align: center;
 }
 
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.main-container {
+  width: 100%;
+}
+
+/* Navigation */
+.navbar {
+  overflow: hidden;
+  background-color: #032e4d;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1;
+}
 
 #myBtn {
   display: none;
@@ -18,7 +39,7 @@ body {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: blue;
+  background-color: black;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -27,7 +48,98 @@ body {
 
 #myBtn:hover {
   background-color: #555;
-}ssss
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+}
+.navbar span {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+}
+
+/* Change nav background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.logo-top{
+  background:url(./img/header_bg.jpg) repeat-x;
+  text-shadow:
+  -2px -1px 0 black,
+  1px -2px 0 black,
+  -2px 1px 0 black,
+  1px 2px 0 black;
+padding: 90px 0px 60px 0px;
+}
+.logo-top h2{
+  color:white;
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+font-size: 1.5em;
+margin: 0;
+padding: 0;
+}
+
+.anchor::before {
+  content:"";
+  display:block;
+  height:30px; /* fixed header height*/
+  margin:-30px 0 0; /* negative fixed header height */
+}
+
+/* Headers */
+#logo {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: 400;
+  letter-spacing: -3px;
+  line-height: 1;
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Team Section */
+
+.team-container article {
+  background:#032e4d;
+  margin: 10px;
+  border-radius:5px;
+  color: #fff;
+  padding: 10px 3px;
+}
+
+.circular-border-size{
+   border-radius: 50%;
+   height: 160px ;
+     width : 160px ;
+ }
+
+ .team-container h3 {
+   font-size:1.30em;
+ }
+
+/* Contact Form */
 
 input[type="text"],
 select,
@@ -55,85 +167,8 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #45a049;
 }
-.main-container {
-  width: 100%;
-}
-h2 {
-  text-align: center;
-}
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-/* The navigation bar */
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  z-index: 1;
-}
 
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 12px 12px;
-  text-decoration: none;
-}
-.navbar span {
-
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 12px 12px;
-  text-decoration: none;
-}
-
-/* Change background on mouse-over */
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
-.logo-top{
-  background:url(./img/header_bg.jpg) repeat-x;
-  text-shadow:
-  -2px -1px 0 black,
-  1px -2px 0 black,
-  -2px 1px 0 black,
-  1px 2px 0 black;
-
-
-}
-.logo-top h3{
-  color:white;
-  text-shadow:
-    -1px -1px 0 black,
-    1px -1px 0 black,
-    -1px 1px 0 black,
-    1px 1px 0 black;
-
-
-}
-
-#logo {
-  margin-top: 0;
-  font-family: "Open Sans", sans-serif;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 100px;
-  font-weight: 400;
-  letter-spacing: -3px;
-  line-height: 1;
-  position: relative;
-}
-
-#email{
+#email {
   width: 100%; !important;
 }
 #message{
@@ -142,20 +177,7 @@ h2 {
 #name{
   width: 100%; !important;
 }
-.team-container article {
-  background:#d3d3d3;
-  margin: 10px;
-  border:1px solid #000;
-}
 
-.footer p{
-
-}
-.circular-border-size{
-   border-radius: 50%;
-   height: 160px ;
-     width : 160px ;
- }
 
 #gform { display:none;}
 #no-js-message { display:block;
@@ -163,15 +185,16 @@ text-align:center;}
 
 /*
 ============================
-    THIS IS DESKTOP!!!!!!
+    THIS IS TABLET!!!!!!
 ============================
 */
 @media only screen and (min-width: 601px) {
   .team-container {
     display: grid;
-    grid-template-columns: 48% 48%;
+    grid-template-columns: 50% 50%;
   }
-  #logo {
+
+#logo {
     margin-top: 0;
     font-family: "Open Sans", sans-serif;
     color: #fff;
@@ -198,6 +221,7 @@ text-align:center;}
   width: 50%;
   margin-left: 25%
   }
+
   #message{
   width: 50%;
   margin-left: 25%
@@ -212,12 +236,16 @@ text-align:center;}
     padding: 14px 16px;
     text-decoration: none;
   }
-}
 
+/*
+============================
+    THIS IS DESKTOP!!!!!!
+============================
+*/
 
 @media only screen and (min-width: 1001px) {
   .team-container {
     display: grid;
-    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-columns: 25% 25% 25% 25%;
   }
 }
