@@ -106,7 +106,11 @@ h2 {
 .footer p{
 
 }
-
+.circular-border-size{
+   border-radius: 50%;
+   height: 160px ;
+     width : 160px ;
+ }
 @media only screen and (min-width: 600px) {
   .team-container {
     display: grid;
