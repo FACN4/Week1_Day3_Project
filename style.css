@@ -111,7 +111,15 @@ h2 {
   position: relative;
 }
 
-
+#email{
+  width: 100%; !important;
+}
+#message{
+  width: 100%; !important;
+}
+#name{
+  width: 100%; !important;
+}
 .team-container article {
   background:#d3d3d3;
   margin: 10px;
@@ -131,6 +139,11 @@ h2 {
 #no-js-message { display:block;
 text-align:center;}
 
+/*
+============================
+    THIS IS DESKTOP!!!!!!
+============================
+*/
 @media only screen and (min-width: 601px) {
   .team-container {
     display: grid;
@@ -153,6 +166,21 @@ text-align:center;}
     font-size: 250px;
 
   }
+  #name{
+
+  width: 50%;
+  margin-left: 25%
+  }
+
+  #email{
+  width: 50%;
+  margin-left: 25%
+  }
+  #message{
+  width: 50%;
+  margin-left: 25%
+  }
+
 
   .navbar span {
     float: right;
