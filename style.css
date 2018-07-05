@@ -178,6 +178,15 @@ textarea {
 
 }
 
+#gform input {
+  margin-bottom:1.5em;
+}
+
+#gform button {
+  margin-top: 1.0em;
+  margin-bottom: -0.7em;
+}
+
 input[type="submit"] {
   background-color: #4caf50;
   color: white;
