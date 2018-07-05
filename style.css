@@ -21,6 +21,11 @@ body {
 }
 
 /* Navigation */
+
+#a-team {
+  display:none;
+}
+
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -194,6 +199,10 @@ text-align:center;}
     grid-template-columns: 50% 50%;
   }
 
+#a-team {
+    display:inline;
+  }
+
 #logo {
     margin-top: 0;
     font-family: "Open Sans", sans-serif;
@@ -226,7 +235,6 @@ text-align:center;}
   width: 50%;
   margin-left: 25%
   }
-
 
   .navbar span {
     float: right;
