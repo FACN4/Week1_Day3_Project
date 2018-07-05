@@ -253,7 +253,12 @@ text-align:center;}
   width: 50%;
   margin-left: 25%
   }
-
+#team{
+  border-bottom: 2px solid gray;
+}
+#about{
+  border-bottom: 2px solid gray;
+}
   .navbar span {
     float: right;
     display: block;
